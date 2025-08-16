@@ -223,6 +223,7 @@ OUTSINC/
 ├── database_schema.sql   # Database structure
 ├── seed.sql              # Demo data and accounts
 ├── index.php            # Main entry point and router
+├── setup.php            # Interactive setup tool
 └── validate.php         # Setup validation script
 ```
 
@@ -916,10 +917,20 @@ Test core functionality in:
 - [ ] Security headers implemented
 - [ ] Performance optimized
 
-### Testing Script
+### Testing Scripts
 
-Use the provided validation script:
+Use the provided validation and setup scripts:
 
+**Setup Tool (Interactive):**
+```bash
+# Run interactive setup guide
+php setup.php
+
+# This tool checks prerequisites, validates configuration,
+# and provides step-by-step setup instructions
+```
+
+**Validation Script (Quick Check):**
 ```bash
 # Run comprehensive system check
 php validate.php
