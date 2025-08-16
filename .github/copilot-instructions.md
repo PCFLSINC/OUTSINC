@@ -58,8 +58,8 @@ Run these commands to set up the development environment:
   - Global tools (serve, lighthouse): ~25-60 seconds. NEVER CANCEL.
 - **Build commands**: 
   - **Will fail initially** due to Google Fonts network error
-  - After font fix: 1-5 minutes. NEVER CANCEL. Set timeout to 10+ minutes.
-- **Development server startup**: 10-30 seconds. NEVER CANCEL.
+  - After font fix: 15-20 seconds for basic app. NEVER CANCEL. Set timeout to 10+ minutes for complex projects.
+- **Development server startup**: 1-2 seconds with Turbopack. NEVER CANCEL.
 - **Linting/Type checking**: 
   - `npm run lint`: ~2-3 seconds
   - `npx tsc --noEmit`: ~2-3 seconds
@@ -70,7 +70,7 @@ Run these commands to set up the development environment:
    ```bash
    npm run dev
    # Starts on http://localhost:3000
-   # Takes 10-30 seconds to start. NEVER CANCEL.
+   # Takes 1-2 seconds to start with Turbopack. NEVER CANCEL.
    ```
 
 2. **Build for production**:
@@ -78,7 +78,7 @@ Run these commands to set up the development environment:
    npm run build
    # WILL FAIL with default template due to Google Fonts network error
    # Fix font imports in layout.tsx first (see Network Limitations section)
-   # After font fix: Takes 1-5 minutes. NEVER CANCEL. Set timeout to 10+ minutes.
+   # After font fix: Takes 15-20 seconds for basic app. NEVER CANCEL. Set timeout to 10+ minutes for complex projects.
    ```
 
 3. **Run production build locally**:
@@ -354,6 +354,30 @@ npm install -g serve && serve .next/static
 - Use local alternatives for external fonts/CDNs
 - Configure offline-first development setup
 - Bundle all external dependencies locally
+
+## Complete Validated Setup Example
+
+This exact sequence has been tested and validated:
+
+```bash
+# 1. Setup new Next.js project (30-35 seconds)
+npx create-next-app@latest my-outsinc-app --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
+
+# 2. Fix Google Fonts issue (REQUIRED)
+cd my-outsinc-app
+# Edit src/app/layout.tsx - remove Geist font imports and use system fonts
+
+# 3. Validate everything works
+npm run lint          # ~2-3 seconds
+npx tsc --noEmit      # ~2-3 seconds  
+npm run build         # ~15-20 seconds after font fix
+npm run dev           # ~1-2 seconds to start
+
+# 4. Install accessibility tools
+npm install -g lighthouse axe-core    # ~60 seconds
+```
+
+**Result**: Fully functional Next.js application ready for OUTSINC implementation.
 
 ## Critical Reminders
 
