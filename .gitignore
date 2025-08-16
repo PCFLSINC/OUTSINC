@@ -1,0 +1,66 @@
+# OUTSINC .gitignore
+
+# Environment and config files
+config/local.php
+.env
+.env.local
+
+# Logs
+logs/*.log
+logs/*.txt
+!logs/.gitkeep
+
+# User uploads
+uploads/*
+!uploads/.gitkeep
+!uploads/reports/.gitkeep
+
+# Temporary files
+tmp/
+temp/
+cache/
+
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using build tools later)
+node_modules/
+npm-debug.log*
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Database dumps
+*.sql.gz
+*.sql.bz2
+database_backup_*
+
+# Compressed files
+*.zip
+*.tar.gz
+*.rar
+
+# Development tools
+.phpunit.result.cache
+coverage/
+
+# Sensitive files that should never be committed
+*.key
+*.pem
+secrets.txt
+passwords.txt
