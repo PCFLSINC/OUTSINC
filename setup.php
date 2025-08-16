@@ -52,7 +52,11 @@ if (empty($missing_extensions)) {
 echo "Checking MySQL availability... ";
 if (function_exists('shell_exec')) {
     $mysql_check = shell_exec('which mysql 2>/dev/null');
-    if ($mysql_check) {
+if (function_exists('exec')) {
+    $output = [];
+    $ret = 1;
+    exec('which mysql', $output, $ret);
+    if ($ret === 0 && !empty($output)) {
         echo green("✓ MySQL client found\n");
     } else {
         echo yellow("⚠ MySQL client not found in PATH\n");
