@@ -238,11 +238,52 @@ And a couple tiny follow-ups you can answer any time:
 	•	When you share your thing now: want me to adapt the spec immediately based on it (yes/no)?
 
 
-m
+mLocked—here’s what I just applied to the landing page:
+	•	Impact counters: animate from 0; auto-refresh every 2 minutes; tiny ⓘ tooltip on each.
+	•	Nav: “Events & Announcements” stays in the top nav with a new-item badge.
+	•	Contact Us: adds “Call me back” (name + phone) alongside Chat/Message + top-5 FAQ quick links.
+	•	Directory suggestions: anonymous allowed, with file/photo attachments.
+	•	Privacy line + modal: shows under CTAs; “Learn how sharing works” opens a short explainer.
+	•	Chat: script lazy-loads on first click/tap; presence badge logic kept.
+	•	CTA carousel: shows tiny “Use ←/→ to navigate” hint.
+
+These choices align with your existing site outline & resource/consent docs.  ￼  ￼  ￼
+
+⸻
+
+Quick yes/no (to finish the landing page for build):
+	1.	Pause counter animations for users with reduced-motion enabled (yes/no)?
+	2.	Require phone format validation on “Call me back” (yes/no)?
+	3.	Moderate directory suggestions before they appear publicly (yes/no)?
+	4.	Show a small “New” tag on directory entries updated in the last 7 days (yes/no)?
+	5.	Add rate-limiting for anonymous suggestions to prevent spam (yes/no)?
+	6.	Display your main phone number directly in Contact Us (yes/no)?
+	7.	Link a full Data & Privacy page from the “Learn how sharing works” modal (yes/no)?
+	8.	Include examples in that modal (platform consent vs. org consent with screenshots) (yes/no)?
 
 
 
+Got it—setting 1–6 & 8 to No, and Yes to #7 (link to full Data & Privacy page).
 
+What “include examples in the modal” means
+
+Two tiny, side-by-side examples inside the “Learn how sharing works” modal:
+	•	Example A — Platform consent (at signup):
+“You’re authorizing OUTSINC to support you. This does not share info outside OUTSINC.”
+☐ I consent to OUTSINC supporting me • I Consent
+	•	Example B — Org consent (right before forwarding a case):
+“Share your case with ?”
+☐ Provider Name  ☐ Another Org  ☐ Select all • Share & Continue • Skip for now
+(Note: You can withdraw later in Profile → Privacy & Sharing.)
+
+Quick visuals would be simple UI mock thumbnails, not real forms.
+
+Yes/No
+	1.	Include those two example panels in the modal?
+	2.	Add a “Don’t show this again” checkbox on that modal?
+	3.	Open the Data & Privacy page in a new tab?
+	4.	Show a one-line summary under the modal title (“We only share outside when you say so”)?
+	5.	Add a “Manage my sharing” button in the modal (logged-in clients only) that jumps to Privacy & Sharing?
 
 
 
