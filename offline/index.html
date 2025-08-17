@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-font-size="medium" data-font-type="default">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTSINC - Navigate housing, health, ID, and more</title>
+    <meta name="description" content="OUTSINC helps you navigate housing, health, ID, and more—at your pace. Start a care plan, take the needs assessment, or chat with us. You're in control.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://outsinc.ca">
+    <meta property="og:title" content="OUTSINC - Navigate housing, health, ID, and more">
+    <meta property="og:description" content="We help you navigate housing, health, ID, and more—at your pace. You're in control.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://outsinc.ca">
+    <meta property="twitter:title" content="OUTSINC - Navigate housing, health, ID, and more">
+    <meta property="twitter:description" content="We help you navigate housing, health, ID, and more—at your pace. You're in control.">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    
+    <!-- Dyslexia-friendly font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=OpenDyslexic:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Top Navigation -->
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#" aria-label="OUTSINC Home">
+                    <h1 class="brand-logo">OUTSINC</h1>
+                </a>
+            </div>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#" aria-current="page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#directory">Directory</a></li>
+                </ul>
+                
+                <!-- Accessibility Controls -->
+                <div class="accessibility-controls">
+                    <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+                    <button id="font-size-toggle" aria-label="Increase font size">A+</button>
+                    <button id="font-type-toggle" aria-label="Toggle dyslexia-friendly font">👁</button>
+                    <button id="high-contrast-toggle" aria-label="Toggle high contrast">◐</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scrolling Marquee -->
+    <div class="marquee" role="banner" aria-live="polite">
+        <div class="marquee-content">
+            <span>🏠 Housing support available 24/7 • 🩺 Health services open today • 📞 Crisis support: Call 211 • 🆕 New resource directory updated</span>
+        </div>
+        <button class="marquee-dismiss" aria-label="Dismiss banner">×</button>
+    </div>
+
+    <!-- Screen Reader Announcements -->
+    <div id="sr-announcements" class="sr-only" aria-live="polite"></div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" aria-label="Main content">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">We help you navigate housing, health, ID, and more—at your pace.</h2>
+                    <p class="hero-subtitle">Start a care plan, take the needs assessment, or chat with us. You're in control.</p>
+                </div>
+                
+                <div class="cta-carousel" role="region" aria-label="Call to action carousel" tabindex="0">
+                    <div class="carousel-slides">
+                        <div class="cta-slide active" aria-hidden="false">
+                            <h3>Start your care plan.</h3>
+                            <p>One place, your pace—questions are optional.</p>
+                            <a href="#" class="btn btn-primary btn-large">Begin</a>
+                        </div>
+                        
+                        <div class="cta-slide" aria-hidden="true">
+                            <h3>MOMCARE onboarding for families.</h3>
+                            <p>Organize care, appointments, and supports.</p>
+                            <a href="#" class="btn btn-primary btn-large">Open MOMCARE</a>
+                        </div>
+                        
+                        <div class="cta-slide" aria-hidden="true">
+                            <h3>Explore our apps.</h3>
+                            <p>Tools for clients, staff, and providers.</p>
+                            <a href="#" class="btn btn-primary btn-large">Browse Apps</a>
+                        </div>
+                        
+                        <div class="cta-slide" aria-hidden="true">
+                            <h3>Take the Needs Assessment.</h3>
+                            <p>See your starting point. Edit anytime.</p>
+                            <a href="#" class="btn btn-primary btn-large">Start Survey</a>
+                        </div>
+                        
+                        <div class="cta-slide" aria-hidden="true">
+                            <h3>Find local help fast.</h3>
+                            <p>Shelter, food, health & more—save favorites.</p>
+                            <a href="#directory" class="btn btn-primary btn-large">Open Directory</a>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <button class="carousel-prev" aria-label="Previous slide">‹</button>
+                        <div class="carousel-indicators">
+                            <button class="carousel-indicator active" aria-label="Slide 1" aria-current="true"></button>
+                            <button class="carousel-indicator" aria-label="Slide 2" aria-current="false"></button>
+                            <button class="carousel-indicator" aria-label="Slide 3" aria-current="false"></button>
+                            <button class="carousel-indicator" aria-label="Slide 4" aria-current="false"></button>
+                            <button class="carousel-indicator" aria-label="Slide 5" aria-current="false"></button>
+                        </div>
+                        <button class="carousel-next" aria-label="Next slide">›</button>
+                    </div>
+                    
+                    <p class="carousel-hint">Use ←/→ to navigate</p>
+                </div>
+                
+                <!-- Privacy Line -->
+                <div class="privacy-notice">
+                    <p>We ask consent before any external sharing. 
+                        <a href="#" data-modal="privacy-modal">Learn how sharing works</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Counters -->
+        <section class="impact-counters" aria-label="Impact statistics">
+            <div class="container">
+                <div class="counters-grid">
+                    <div class="counter-item">
+                        <span class="impact-counter" data-target="42" data-counter="cases_today">0</span>
+                        <p>Cases started today 
+                            <button class="info-tooltip" aria-label="Cases started today means new care plans or intake forms begun">ⓘ</button>
+                        </p>
+                    </div>
+                    <div class="counter-item">
+                        <span class="impact-counter" data-target="18" data-counter="partners_live">0</span>
+                        <p>Partners live 
+                            <button class="info-tooltip" aria-label="Partners live means service providers currently active on the platform">ⓘ</button>
+                        </p>
+                    </div>
+                    <div class="counter-item">
+                        <span class="impact-counter" data-target="127" data-counter="chats_week">0</span>
+                        <p>Chats answered this week 
+                            <button class="info-tooltip" aria-label="Chats answered this week includes completed chat sessions with operators">ⓘ</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured App Spotlight -->
+        <section class="featured-app" id="featured-app">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>MOMCARE: organize care and feel supported.</h2>
+                        <ul class="feature-list">
+                            <li>Appointments calendar</li>
+                            <li>Symptom & medication logs</li>
+                            <li>Family-sharing options</li>
+                            <li>Printable summaries</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-large">Open MOMCARE</a>
+                    </div>
+                    <div class="col">
+                        <div class="app-preview">
+                            <!-- Placeholder for app preview image -->
+                            <div style="width: 100%; height: 300px; background: var(--secondary-bg); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--secondary-text);">
+                                MOMCARE App Preview
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Apps Showcase -->
+        <section class="apps-showcase" id="apps-showcase">
+            <div class="container">
+                <h2>Other Apps</h2>
+                <div class="apps-grid">
+                    <div class="app-card">
+                        <h3>Client Portal</h3>
+                        <p>Manage your care plan and appointments</p>
+                        <a href="#" class="btn">Open</a>
+                    </div>
+                    <div class="app-card">
+                        <h3>Staff Workspace</h3>
+                        <p>Tools for case management and coordination</p>
+                        <a href="#" class="btn">Open</a>
+                    </div>
+                    <div class="app-card">
+                        <h3>Provider Portal</h3>
+                        <p>Connect with clients and manage referrals</p>
+                        <a href="#" class="btn">Open</a>
+                    </div>
+                    <div class="app-card">
+                        <h3>Case Reports</h3>
+                        <p>Analytics and insights for administrators</p>
+                        <a href="#" class="btn">Open</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <h2>Contact us</h2>
+                <p>Have questions or need help getting started? We'll point you in the right direction.</p>
+                
+                <div class="contact-options">
+                    <button class="btn btn-primary" id="open-chat">Open Chat</button>
+                    <button class="btn" onclick="alert('This would open a message form in the full version')">Send Message</button>
+                    <a href="#directory" class="btn">Find a Resource</a>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Our Organization</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>OUTSINC</h4>
+                            <p>📍 123 Main Street, Toronto, ON M1A 1A1</p>
+                            <p>📞 <a href="tel:+15550100">(555) 010-0100</a></p>
+                            <p>📧 <a href="mailto:info@outsinc.ca">info@outsinc.ca</a></p>
+                            <p>🕒 Monday-Friday 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Call me back form -->
+                <div class="callback-form">
+                    <h3>Call me back</h3>
+                    <form onsubmit="event.preventDefault(); alert('In the full version, this would submit a callback request.');">
+                        <div class="form-group">
+                            <label for="callback-name">Name</label>
+                            <input type="text" id="callback-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="callback-phone">Phone Number</label>
+                            <input type="tel" id="callback-phone" name="phone" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Request Callback</button>
+                    </form>
+                </div>
+                
+                <!-- FAQ Quick Links -->
+                <div class="faq-quick-links">
+                    <h3>Quick Answers</h3>
+                    <ul>
+                        <li><a href="#" onclick="alert('This would link to the full FAQ in the complete version')">How do I get started?</a></li>
+                        <li><a href="#" onclick="alert('This would link to privacy information')">How is my information protected?</a></li>
+                        <li><a href="#" onclick="alert('This would link to services information')">What services are available?</a></li>
+                        <li><a href="#" onclick="alert('This would link to emergency procedures')">What if I have an emergency?</a></li>
+                        <li><a href="#" onclick="alert('This would link to hours information')">What are your hours?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report an Issue -->
+        <section class="report-section" id="report-issue">
+            <div class="container">
+                <h2>Report an issue</h2>
+                <p>You can submit without sharing your name.</p>
+                
+                <form onsubmit="event.preventDefault(); alert('In the full version, this would submit your report and provide a case ID.');">
+                    <div class="form-group">
+                        <label for="report-category">Category</label>
+                        <select id="report-category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="housing">Housing</option>
+                            <option value="health">Health</option>
+                            <option value="safety">Safety</option>
+                            <option value="access">Access</option>
+                            <option value="discrimination">Discrimination</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="report-location">Location</label>
+                        <input type="text" id="report-location" name="location" placeholder="General area or intersection" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="report-description">Description</label>
+                        <textarea id="report-description" name="description" rows="4" placeholder="Describe the issue..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="report-photo">Photo (optional)</label>
+                        <input type="file" id="report-photo" name="photo" accept="image/*,.pdf">
+                        <small>Max file size: 5MB. Formats: JPG, PNG, GIF, PDF</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reporter-name">Your name (optional)</label>
+                        <input type="text" id="reporter-name" name="reporter_name" placeholder="Anonymous submissions are okay">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reporter-contact">Contact information (optional)</label>
+                        <input type="text" id="reporter-contact" name="reporter_contact" placeholder="Phone or email if you want follow-up">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit Report</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Service Providers We Offer -->
+        <section class="providers-section" id="providers">
+            <div class="container">
+                <h2>Service Providers We Offer</h2>
+                <p>We hand off cases to the right provider—with your consent at the moment it's needed.</p>
+                
+                <div class="provider-categories">
+                    <div class="provider-tile">
+                        <h3>Housing</h3>
+                        <p>Emergency shelter, transitional housing, housing search</p>
+                    </div>
+                    <div class="provider-tile">
+                        <h3>Health</h3>
+                        <p>Medical care, mental health, addiction services</p>
+                    </div>
+                    <div class="provider-tile">
+                        <h3>Harm Reduction</h3>
+                        <p>Safe use supplies, overdose prevention, support</p>
+                    </div>
+                    <div class="provider-tile">
+                        <h3>ID & Documentation</h3>
+                        <p>Birth certificates, health cards, benefit applications</p>
+                    </div>
+                    <div class="provider-tile">
+                        <h3>Employment</h3>
+                        <p>Job search, skills training, income support</p>
+                    </div>
+                    <div class="provider-tile">
+                        <h3>Legal</h3>
+                        <p>Legal aid, advocacy, rights information</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="#" class="btn" onclick="alert('This would link to provider portal information')">See Provider Portal</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resource Directory -->
+        <section class="directory-section" id="directory">
+            <div class="container">
+                <h2>Find local help fast</h2>
+                <p>Directory of local resources and services</p>
+                
+                <div class="directory-filters">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="housing">Housing</option>
+                        <option value="health">Health</option>
+                        <option value="legal">Legal</option>
+                        <option value="food">Food & Nutrition</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="support">Support Services</option>
+                    </select>
+                    
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="open-now-filter">
+                        <span class="toggle-slider"></span>
+                        Open Now
+                    </label>
+                </div>
+                
+                <div class="resources-grid" id="resources-list">
+                    <!-- Resources will be populated by JavaScript from hardcoded data -->
+                </div>
+                
+                <div class="text-center">
+                    <button class="btn btn-large" onclick="showAllResources()">Show All Resources</button>
+                    <button class="btn" onclick="alert('In the full version, this would open a form to suggest resource updates')">Suggest an update</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#" onclick="alert('This would link to our mission page')">Our Mission</a></li>
+                        <li><a href="#" onclick="alert('This would link to team information')">Team</a></li>
+                        <li><a href="#" onclick="alert('This would link to partner information')">Partners</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#" onclick="alert('This would link to care plans information')">Care Plans</a></li>
+                        <li><a href="#" onclick="alert('This would link to assessments')">Assessments</a></li>
+                        <li><a href="#directory">Directory</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#" onclick="alert('This would link to help center')">Help Center</a></li>
+                        <li><a href="#" onclick="alert('This would link to FAQ')">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#" onclick="alert('This would link to privacy policy')">Privacy</a></li>
+                        <li><a href="#" onclick="alert('This would link to terms of service')">Terms</a></li>
+                        <li><a href="#" onclick="alert('This would link to accessibility statement')">Accessibility</a></li>
+                        <li><a href="#" onclick="alert('This would link to release notes')">What's New</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:555-0100">Phone: (555) 010-0100</a></li>
+                        <li><a href="mailto:info@outsinc.ca">Email: info@outsinc.ca</a></li>
+                        <li>123 Main Street<br>Toronto, ON M1A 1A1</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 OUTSINC. We ask consent before any external sharing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Bubble -->
+    <div class="chat-bubble" role="button" tabindex="0" aria-label="Open chat">
+        <div class="chat-icon">💬</div>
+        <div class="chat-status status-live">Live now</div>
+    </div>
+
+    <!-- Chat Widget (hidden by default) -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-header">
+            <h3>Chat Support</h3>
+            <button class="chat-close" aria-label="Close chat">×</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="chat-message operator">
+                    <div class="message-content">
+                        <p>Hello! I'm here to help you navigate our services. How can I assist you today?</p>
+                        <span class="message-time">Just now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <div class="chat-input-container">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button class="chat-send" id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Message Container for notifications -->
+    <div class="message-container"></div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
